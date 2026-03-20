@@ -1,0 +1,37 @@
+mkdir: cannot create directory ‘/Desktop’: Permission denied
+cp: cannot stat '/Desktop/VUT/3': No such file or directory
+cp: -r not specified; omitting directory 'KURS/2'
+cp: cannot stat 'core': No such file or directory
+cp: cannot stat '/Desktop/VUT/3': No such file or directory
+cp: cannot stat 'vendor': No such file or directory
+cp: cannot stat '/Desktop/VUT/3': No such file or directory
+cp: cannot stat 'interpret.php': No such file or directory
+cp: cannot stat '/Desktop/VUT/3': No such file or directory
+Archive:  xshele02.zip
+  inflating: readme1.pdf             
+  inflating: parse.py                
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\VUT\3 KURS\2 SEM\IPP\1\parse.py", line 8, in <module>
+    from lark import Lark, UnexpectedCharacters, UnexpectedInput, Token, Tree
+ModuleNotFoundError: No module named 'lark'
+cp: -r not specified; omitting directory 'Desktop/VUT/3'
+cp: -r not specified; omitting directory 'KURS/2'
+cp: cannot stat 'core': No such file or directory
+cp: cannot stat 'vendor': No such file or directory
+cp: cannot stat 'interpret.php': No such file or directory
+Archive:  xshele02.zip
+  inflating: readme1.pdf             
+  inflating: parse.py                
+./is_it_ok.sh: line 268: python: command not found
+cp: -r not specified; omitting directory 'Desktop/VUT/3'
+cp: -r not specified; omitting directory 'KURS/2'
+cp: cannot stat 'core': No such file or directory
+cp: cannot stat 'vendor': No such file or directory
+cp: cannot stat 'interpret.php': No such file or directory
+Archive:  xshele02.zip
+  inflating: readme1.pdf             
+  inflating: parse.py                
+Skript typu filtr (parse.py v jazyce Python)
+načte ze standardního vstupu zdrojový kod v SOL25
+zkontroluje lexikální, syntaktickou a statickou sémantickou správnost kódu
+a vypíše na standardní výstup XML reprezentaci programu.

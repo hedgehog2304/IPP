@@ -1,0 +1,78 @@
+class Main : Object {
+     run
+     [|
+     x1 := Nil new.
+     _ := (x1 asString) print.
+     _ := '\n' print.
+     x2 := true.
+     x3 := False new.
+     _ := ((x2 and: [|_ := False new.]) asString) print.
+     _ := '\n' print.
+     _ := ((x2 or: [|_ := (True new) not.]) asString) print.
+     _ := '\n' print.
+     _ := (x3 not) ifTrue: [|u := 'Ok\n' print.]
+                   ifFalse: [|u := 'Not Ok\n' print.].
+     x4 := Integer new.
+     x5 := Integer from: -20.
+     x4 := x4 plus: (Integer from: 10).
+     _ := ((x4 minus: x5) asString) print.
+     _ := '\n' print.
+     _ := (((x4 multiplyBy: x5) divBy: (Integer from: 5)) asString) print.
+     _ := '\n' print.
+     _ := (5 greaterThan: (Integer new)) ifTrue: [|u := 'Ok\n' print.]
+                   ifFalse: [|u := 'Not Ok\n' print.].
+     _ := ((String from: '3') asInteger) timesRepeat: [:a| _ := ((a plus: 10) asString) print.].
+     _ := '\n' print.
+     x6 := String new.
+     x7 := (String from: 'Hello') print.
+     _ := '\n' print.
+     x8 := String read.
+     _ := (x4 asString) print.
+     _ := '\n' print.
+     _ := ((self createString: x8) startsWith: ((Integer new) plus: 1) endsBefore: x4) print.
+     _ := '\n' print.
+
+     x := self compute: 3 and: 2 and: 5.
+     x := self plusOne: (self vysl).
+     y := (x asString) print.
+     _ := '\n' print.
+
+     b2 := [ :x | _ := x plus: 1. ].
+     b3 := [ :x:y | val := x value: y. ].
+     c := ((b3 value: b2 value: 3) asString) print.
+     _ := '\n' print.
+
+     x := self attr: 3.
+     y := [| ret := (self attr) greaterThan: 0. ] whileTrue:
+     [| r := ((self attr) asString) print.
+     r := self attr: ((self attr) minus: 1).].
+
+     r := self value: 10.
+     e := self next: (self value).
+     t := self value: nil.
+
+     _ := ((self value) asString) print.
+     _ := ((self next) asString) print.
+
+
+     ]
+
+     createString:
+     [:radek|_ := radek concatenateWith: (String read).]
+
+     plusOne:
+     [ :x | r := x plus: 1. ]
+
+     compute:and:and:
+     [ :x :y :z |
+     
+     a := x plus: y.
+     
+     _ := self vysl: a.
+     
+     _ := ((self vysl) greaterThan: 0)
+     ifTrue: [|u := self vysl: 1.]
+     ifFalse: [|].
+     ]
+
+}
